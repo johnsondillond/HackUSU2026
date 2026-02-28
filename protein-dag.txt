@@ -1,0 +1,24 @@
+dag {
+bb="-4.302,-3.932,4.288,4.519"
+"Dietary Restrictions" [adjusted,pos="1.027,3.815"]
+"Protein Content" [adjusted,pos="-2.057,2.217"]
+"Protein Purchase" [outcome,pos="0.221,0.320"]
+Calories [adjusted,pos="-1.302,-0.736"]
+Flavor [adjusted,pos="1.078,-3.227"]
+Lifestyle [adjusted,pos="3.572,1.634"]
+Medium [adjusted,pos="-1.235,-3.105"]
+Price [adjusted,pos="-3.586,0.547"]
+Sugar [adjusted,pos="2.071,-1.438"]
+"Dietary Restrictions" -> "Protein Purchase"
+"Protein Content" -> "Protein Purchase"
+"Protein Content" -> Calories
+Calories -> "Protein Purchase"
+Flavor -> "Protein Purchase"
+Lifestyle -> "Protein Purchase"
+Medium -> "Protein Purchase"
+Medium -> Flavor
+Price -> "Protein Purchase"
+Sugar -> "Protein Purchase"
+Sugar -> Calories
+Sugar -> Flavor
+}
