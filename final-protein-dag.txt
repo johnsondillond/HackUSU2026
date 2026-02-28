@@ -1,0 +1,24 @@
+dag {
+bb="-4.302,-3.932,4.288,4.519"
+"Confections Purchase" [outcome,pos="0.221,0.320"]
+"Protein Content" [adjusted,pos="-2.057,2.217"]
+"Spending Money" [adjusted,pos="1.027,3.815"]
+Calories [adjusted,pos="-1.302,-0.736"]
+Flavor [adjusted,pos="1.078,-3.227"]
+Lifestyle [adjusted,pos="3.572,1.634"]
+Medium [adjusted,pos="-1.235,-3.105"]
+Price [adjusted,pos="-3.586,0.547"]
+Sugar [adjusted,pos="2.071,-1.438"]
+"Protein Content" -> "Confections Purchase"
+"Protein Content" -> Calories
+"Spending Money" -> "Confections Purchase"
+Calories -> "Confections Purchase"
+Flavor -> "Confections Purchase"
+Lifestyle -> "Confections Purchase"
+Medium -> "Confections Purchase"
+Medium -> Flavor
+Price -> "Confections Purchase"
+Sugar -> "Confections Purchase"
+Sugar -> Calories
+Sugar -> Flavor
+}
